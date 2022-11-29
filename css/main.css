@@ -1,0 +1,577 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'fontello';
+  src: url("../fonts/fontello.eot?37004270");
+  src: url("../fonts/fontello.eot?37004270#iefix") format("embedded-opentype"), url("../fonts/fontello.woff2?37004270") format("woff2"), url("../fonts/fontello.woff?37004270") format("woff"), url("../fonts/fontello.ttf?37004270") format("truetype"), url("../fonts/fontello.svg?37004270#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?37004270#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: never;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-heart-empty:before {
+  content: '\e800';
+}
+
+/* '' */
+.icon-facebook:before {
+  content: '\f09a';
+}
+
+/* '' */
+.icon-comment-empty:before {
+  content: '\f0e5';
+}
+
+/* '' */
+.icon-instagram:before {
+  content: '\f16d';
+}
+
+/* '' */
+.icon-vkontakte:before {
+  content: '\f189';
+}
+
+/* '' */
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.woman {
+  height: 1227px;
+  background-image: url("../img/Tattoo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top right;
+  background-size: cover;
+}
+.woman .filling_form {
+  display: flex;
+  display: none;
+  width: 380px;
+  background-color: #1D1D1D;
+  padding: 20px;
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  background: rgba(29, 29, 29, 0.8);
+}
+.woman .filling_form .close {
+  color: #48B1C6;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 340px;
+  top: 5px;
+}
+.woman .filling_form input {
+  width: 282px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #48B1C6;
+  background-color: #1D1D1D;
+  color: white;
+}
+.woman .filling_form .filling_form_comment {
+  padding-bottom: 100px;
+}
+.woman .filling_form .confirm {
+  width: 282px;
+  margin: 15px;
+  padding: 10px;
+  background-color: #48B1C6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+}
+.woman .filling_form h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.woman header {
+  padding-top: 46px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+.woman header img {
+  width: 88px;
+  height: 88px;
+}
+.woman header ul {
+  display: flex;
+}
+.woman header ul li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+.woman header ul li a {
+  color: white;
+  text-decoration: none;
+}
+.woman header ul li a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #48B1C6;
+  transform: translateY(12px) scale(0);
+  transition: all 0.4s;
+}
+.woman header ul li a:hover {
+  color: #48B1C6;
+  transition: 0.4s;
+}
+.woman header ul li a:hover::after {
+  transform: translateY(13px) scale(1);
+}
+.woman header .header_info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.woman header .header_info a {
+  color: white;
+  text-decoration: none;
+}
+.woman header .header_info span {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.woman .tagline {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 150px;
+}
+.woman .tagline h1 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.woman .tagline p {
+  margin-top: 31px;
+  margin-bottom: 31px;
+  font-size: 20px;
+  line-height: 23px;
+}
+.woman .tagline .button_connect {
+  background-color: #48B1C6;
+  border: none;
+  padding-right: 42px;
+  padding-left: 42px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+}
+.woman .socials_links {
+  margin-top: 170px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.woman .socials_links ul {
+  display: flex;
+  float: right;
+}
+.woman .socials_links ul li {
+  list-style-type: none;
+}
+.woman .socials_links ul li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 25px;
+  margin-left: 60px;
+}
+.woman .benefits {
+  margin-top: 282px;
+  padding-top: 80px;
+  padding-bottom: 90px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: center;
+}
+.woman .benefits h2 {
+  margin-bottom: 30px;
+}
+.woman .benefits .benefits_block {
+  padding: 10px;
+  text-align: center;
+}
+.woman .benefits .benefits_block p {
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.services {
+  background-color: #1D1D1D;
+  padding-top: 80px;
+}
+.services h2 {
+  margin-bottom: 50px;
+}
+.services .service_columns {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-bottom: 80px;
+}
+.services .service_columns .service_column h3 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+.services .service_columns .service_column h3:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #48B1C6;
+  margin-top: 8px;
+}
+.services .service_columns .service_column span {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.services .service_columns .service_column p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #BCBCBC;
+}
+
+.portfolio {
+  background-color: #1D1D1D;
+  padding-top: 83px;
+}
+.portfolio h2 {
+  padding-bottom: 50px;
+}
+.portfolio .portfolio_gallery img {
+  /*height: 320px */
+  height: 17%;
+  margin: -1px;
+  padding: -1px;
+}
+.portfolio .portfolio_gallery .gallery_line .gallery_img_17 {
+  width: 16.55%;
+}
+.portfolio .portfolio_gallery .gallery_line .gallery_img_16 {
+  width: 16.55%;
+}
+.portfolio button {
+  width: 230px;
+  margin-top: 30px;
+  margin-bottom: 86px;
+  padding: 19px;
+  background-color: #48B1C6;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+}
+
+.education {
+  height: 530px;
+  background-image: url("../img/hand.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.education h2 {
+  padding-top: 80px;
+  margin-bottom: 50px;
+}
+.education .education_description {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.education .education_description h3 {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+.education .education_description h3:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #48B1C6;
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+.education .education_description .description_column {
+  padding: 10px;
+  padding-left: 20px;
+}
+.education .education_description span {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 16px;
+}
+.education .education_description p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #BCBCBC;
+}
+
+.questions {
+  height: 588px;
+  background-color: #1D1D1D;
+  padding-top: 80px;
+}
+.questions h2 {
+  padding-bottom: 50px;
+}
+.questions .questions_blocks {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 30px;
+}
+.questions .questions_blocks span {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+}
+.questions .questions_blocks span:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #48B1C6;
+  margin-top: 8px;
+}
+.questions .questions_blocks p {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #BCBCBC;
+}
+.questions_buttons {
+  text-align: center;
+  margin-top: 28px;
+  padding-bottom: 28px;
+}
+.questions_buttons span {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.09em;
+  color: #BCBCBC;
+}
+.questions_buttons button {
+  background-color: #48B1C6;
+  border: none;
+  padding-right: 42px;
+  padding-left: 42px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.09em;
+  margin-left: 41px;
+}
+
+.map {
+  height: 474px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.map_contacts {
+  width: 30%;
+  float: right;
+  background: rgba(29, 29, 29, 0.7);
+  margin-right: 60px;
+  height: 100%;
+  padding-top: 80px;
+  padding-left: 84px;
+}
+.map_contacts h2 {
+  text-align: left;
+  margin-bottom: 39px;
+}
+.map_contacts h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 14px;
+}
+.map_contacts p {
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 19px;
+}
+.map_contacts_social_links {
+  float: left;
+}
+.map_contacts_social_links a {
+  color: white;
+  margin-right: 33px;
+}
+.map_contacts_social_links a i {
+  margin-left: -2px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #1D1D1D;
+  height: 160px;
+}
+footer .footer_items {
+  padding-top: 39px;
+  margin-left: 20%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer_items img {
+  width: 88px;
+  height: 88px;
+}
+footer .footer_items ul {
+  display: flex;
+}
+footer .footer_items ul li {
+  list-style-type: none;
+  margin-left: 50px;
+}
+footer .footer_items ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer_items .phone {
+  color: white;
+  text-decoration: none;
+}
+footer .footer_items .phone button {
+  padding: 11px 24px 11px 24px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.09em;
+}
+
+/* Адаптив для сайта */
+@media (max-width: 1700px) {
+  .questions .questions_blocks {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 1300px) {
+  .woman header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .woman .tagline {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .woman .socials_links {
+    margin-right: 5%;
+  }
+  .woman .benefits {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .services .service_columns {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .education .education_description {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .questions .questions_blocks {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

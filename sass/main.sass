@@ -1,0 +1,388 @@
+@import "fontello"
+
+body
+	margin: 0
+	padding: 0
+	color: white
+	font-family: 'Roboto', sans-serif
+	font-size: 13px
+h2
+	font-weight: bold
+	text-transform: uppercase
+	font-size: 25px
+	line-height: 29px
+	text-align: center
+.woman
+	height: 1227px
+	background-image: url('../img/Tattoo.jpg')
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-position: top right
+	background-size: cover
+	.filling_form
+		display: flex
+		display: none
+		width: 380px
+		background-color: #1D1D1D
+		padding: 20px
+		justify-content: center
+		position: absolute
+		top: 20%
+		left: 40%
+		background: rgba(29, 29, 29, 0.8)
+		.close
+			color: #48B1C6
+			font-weight: bold
+			font-size: 20px
+			padding-left: 10px
+			padding-right: 10px
+			padding-top: 5px
+			padding-bottom: 5px
+			background-color: transparent
+			border: 0
+			cursor: pointer
+			position: absolute
+			left: 340px
+			top: 5px
+		input
+			width: 282px
+			margin: 15px
+			padding: 10px
+			border: 1px solid #48B1C6
+			background-color: #1D1D1D
+			color: white
+		.filling_form_comment
+			padding-bottom: 100px
+		.confirm
+			width: 282px
+			margin: 15px
+			padding: 10px
+			background-color: #48B1C6
+			border: none
+			color: white
+			font-weight: bold
+			font-size: 15px
+			line-height: 18px
+			letter-spacing: 0.09em
+		h3
+			text-align: center
+			text-transform: uppercase
+			font-size: 18px
+			line-height: 21px
+			font-weight: bold
+	header
+		padding-top: 46px
+		margin-left: 20%
+		margin-right: 20%
+		display: flex
+		justify-content: space-between
+		img
+			width: 88px
+			height: 88px
+		ul
+			display: flex
+			li
+				list-style-type: none
+				margin-left: 50px
+				a
+					color: white
+					text-decoration: none
+					&::after
+						content: ''
+						display: block
+						width: 100%
+						height: 2px
+						background-color: #48B1C6
+						transform: translateY(12px) scale(0)
+						transition: all 0.4s
+					&:hover
+						color: #48B1C6
+						transition: 0.4s
+						&::after
+							transform: translateY(13px) scale(1)
+		.header_info
+			display: flex
+			flex-direction: column
+			text-align: right
+			a
+				color: white
+				text-decoration: none
+			span
+				margin-top: 7px
+				color: rgba(255, 255, 255, 0.6)
+	.tagline
+		margin-left: 20%
+		margin-right: 20%
+		margin-top: 150px
+		h1
+			font-weight: bold
+			font-size: 40px
+			line-height: 47px
+			letter-spacing: 0.05em
+			text-transform: uppercase
+		p
+			margin-top: 31px
+			margin-bottom: 31px
+			font-size: 20px
+			line-height: 23px
+		.button_connect
+			background-color: #48B1C6
+			border: none
+			padding-right: 42px
+			padding-left: 42px
+			padding-top: 19px
+			padding-bottom: 19px
+			color: white
+			font-weight: bold
+			font-size: 15px
+			line-height: 18px
+			letter-spacing: 0.09em
+	.socials_links
+		margin-top: 170px
+		margin-left: 20%
+		margin-right: 20%
+		ul
+			display: flex
+			float: right
+			li
+				list-style-type: none
+				a
+					color: white
+					font-weight: bold
+					text-decoration: none
+					font-size: 25px
+					margin-left: 60px
+	.benefits
+		margin-top: 282px
+		padding-top: 80px
+		padding-bottom: 90px
+		margin-left: 20%
+		margin-right: 20%
+		display: flex
+		justify-content: center
+		h2
+			margin-bottom: 30px
+		.benefits_block
+			padding: 10px
+			text-align: center
+			p
+				margin-top: 15px
+				font-size: 20px
+				line-height: 23px
+				text-align: center
+				letter-spacing: 0.05em
+.services
+	background-color: #1D1D1D
+	padding-top: 80px
+	h2
+		margin-bottom: 50px
+	.service_columns
+		margin-left: 20%
+		margin-right: 20%
+		padding-bottom: 80px
+		.service_column
+			h3
+				font-weight: bold
+				font-size: 25px
+				line-height: 29px
+				&:after
+					content: ''
+					display: block
+					width: 100px
+					height: 2px
+					background-color: #48B1C6
+					margin-top: 8px
+			span
+				font-weight: bold
+				font-size: 15px
+				line-height: 20px
+				margin-top: 16px
+			p
+				font-size: 15px
+				line-height: 20px
+				color: #BCBCBC
+.portfolio
+	background-color: #1D1D1D
+	padding-top: 83px
+	h2
+		padding-bottom: 50px
+	.portfolio_gallery
+		img
+			
+			/*height: 320px*/
+			height: 17%
+			margin: -1px
+			padding: -1px
+		.gallery_line
+			.gallery_img_17
+				width: 16.55%
+
+			.gallery_img_16
+				width: 16.55%
+	button
+		width: 230px
+		margin-top: 30px
+		margin-bottom: 86px
+		padding: 19px
+		background-color: #48B1C6
+		border: none
+		color: white
+		font-weight: bold
+		font-size: 15px
+		line-height: 18px
+		letter-spacing: 0.09em
+.education
+	height: 530px
+	background-image: url('../img/hand.jpg')
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-position: center center
+	background-size: cover
+	h2
+		padding-top: 80px
+		margin-bottom: 50px
+	.education_description
+		margin-left: 20%
+		margin-right: 20%
+		h3
+			font-weight: bold
+			font-size: 25px
+			line-height: 29px
+			&:after
+				content: ''
+				display: block
+				width: 100px
+				height: 2px
+				background-color: #48B1C6
+				margin-top: 8px
+				margin-bottom: 25px
+		.description_column
+			padding: 10px
+			padding-left: 20px
+		span
+			font-weight: bold
+			font-size: 15px
+			line-height: 20px
+			margin-top: 16px
+		p
+			font-size: 15px
+			line-height: 20px
+			color: #BCBCBC
+.questions
+	height: 588px
+	background-color: #1D1D1D
+	padding-top: 80px
+	h2
+		padding-bottom: 50px
+	.questions_blocks
+		margin-left: 20%
+		margin-right: 20%
+		margin-bottom: 30px
+		span
+			font-weight: bold
+			font-size: 25px
+			line-height: 29px
+			&:after
+				content: ''
+				display: block
+				width: 100px
+				height: 2px
+				background-color: #48B1C6
+				margin-top: 8px
+		p
+			margin-top: 12px
+			font-size: 15px
+			line-height: 20px
+			color: #BCBCBC
+	&_buttons
+		text-align: center
+		margin-top: 28px
+		padding-bottom: 28px
+		span
+			font-size: 14px
+			line-height: 20px
+			letter-spacing: 0.09em
+			color: #BCBCBC
+		button
+			background-color: #48B1C6
+			border: none
+			padding-right: 42px
+			padding-left: 42px
+			padding-top: 19px
+			padding-bottom: 19px
+			color: white
+			font-weight: bold
+			font-size: 15px
+			line-height: 18px
+			letter-spacing: 0.09em
+			margin-left: 41px
+.map
+	height: 474px
+	background-image: url('../img/map.jpg')
+	background-repeat: no-repeat
+	background-attachment: scroll
+	background-position: center center
+	background-size: cover
+	&_contacts
+		width: 30%
+		float: right
+		background: rgba(29, 29, 29, 0.7)
+		margin-right: 60px
+		height: 100%
+		padding-top: 80px
+		padding-left: 84px
+		h2
+			text-align: left
+			margin-bottom: 39px
+		h3
+			font-weight: bold
+			font-size: 20px
+			line-height: 23px
+			margin-bottom: 14px
+		p
+			font-size: 15px
+			line-height: 18px
+			margin-bottom: 19px
+		&_social_links
+			float: left
+			a
+				color: white
+				margin-right: 33px
+				i
+					margin-left: -2px
+					font-size: 20px
+footer
+	background-color: #1D1D1D
+	height: 160px
+	.footer_items
+		padding-top: 39px
+		margin-left: 20%
+		margin-right: 20%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		img
+			width: 88px
+			height: 88px
+		ul
+			display: flex
+			li
+				list-style-type: none
+				margin-left: 50px
+				a
+					color: white
+					text-decoration: none
+		.phone
+			color: white
+			text-decoration: none
+			button
+				padding: 11px 24px 11px 24px
+				border: 1px solid white
+				background: transparent
+				color: white
+				font-size: 10px
+				line-height: 12px
+				letter-spacing: 0.09em
+
+
+@import "media"
